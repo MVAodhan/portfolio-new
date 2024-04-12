@@ -14,22 +14,6 @@ import SocialLinkBox from "../components/SocialLinkBox.astro";
     <div class="mb-14">
       <Markdown of={aboutPageContent.about.description} />
     </div>
-    <div class="flex flex-col min-[410px]:flex-row">
-      <Image
-        src={aboutPageContent.about.image_l.url}
-        alt={aboutPageContent.about.image_l.alt}
-        width={350}
-        height={250}
-        class="w-[350px] h-[250px] object-cover rounded-xl -rotate-6"
-      />
-      <Image
-        src={aboutPageContent.about.image_r.url}
-        alt={aboutPageContent.about.image_r.alt}
-        width={150}
-        height={250}
-        class="w-[150px] h-[250px] object-cover rounded-xl rotate-6 mx-auto sm:ml-auto"
-      />
-    </div>
   </section>
   <section class="my-20 mt-32 max-w-2xl mx-auto px-6 sm:flex sm:gap-16">
     <h2 class="mb-8 sm:mb-0 opacity-60">Work</h2>
@@ -45,9 +29,6 @@ import SocialLinkBox from "../components/SocialLinkBox.astro";
   <section class="mt-32 max-w-2xl mx-auto px-6 sm:flex sm:gap-16">
     <h2 class="mb-8 sm:mb-0 opacity-60">Connect</h2>
     <div>
-      <div class="mb-6">
-        <Markdown of={aboutPageContent.work.description} />
-      </div>
       <div class="grid grid-cols-2 gap-2 group">
         {
           aboutPageContent.connect.links.map((item) => (

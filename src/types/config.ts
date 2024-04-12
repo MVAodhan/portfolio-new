@@ -28,11 +28,6 @@ export type HomePageContent = {
   role: string;
   description: string;
   socialLinks: SocialLink[];
-  links: {
-    title: string;
-    url: string;
-    external?: boolean;
-  }[];
 };
 
 export type ResumeItem = {

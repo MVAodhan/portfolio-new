@@ -8,12 +8,8 @@ type Props = Project;
 const { title, description, image, year, url } = Astro.props;
 ---
 
-<a
-  href={url}
-  target="_blank"
-  class="sm:py-5 py-10 flex flex-col sm:flex-row gap-6 group-hover:opacity-60 hover:!opacity-100 transition-opacity"
->
-  <div class="h-full bg-gray-700 rounded-lg aspect-video sm:h-[150px]">
+<a href={url} target="_blank" class="">
+  <!-- <div class="h-full bg-gray-700 rounded-lg aspect-video sm:h-[150px]">
     <Image
       width={1920}
       height={1080}
@@ -21,8 +17,8 @@ const { title, description, image, year, url } = Astro.props;
       alt={title}
       class="w-full h-full object-cover rounded-lg aspect-video"
     />
-  </div>
-  <div>
+  </div> -->
+  <div class="border card py-5 flex flex-col px-5">
     <div class="flex items-center gap-1 mb-2">
       <h2 class="font-medium">{title}</h2>
       <span class="opacity-60">· {year}</span>

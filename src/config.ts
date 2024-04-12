@@ -9,9 +9,9 @@ import type {
 } from "./types/config";
 
 export const identity: Identity = {
-  name: "Tim Witzdam",
+  name: "Aodhan Hamilton",
   logo: "/logo.webp",
-  email: "tim@witzdam.com",
+  email: "hamilton.aodhan@gmail.com",
 };
 
 export const navBarLinks: NavBarLink[] = [
@@ -36,45 +36,36 @@ export const navBarLinks: NavBarLink[] = [
 export const socialLinks: SocialLink[] = [
   {
     title: "GitHub",
-    url: "https://github.com/TimWitzdam",
+    url: "https://github.com/MVAodhan",
     icon: "mdi:github",
     external: true,
   },
   {
-    title: "Mail",
-    url: "mailto:tim@witzdam.com",
-    icon: "mdi:email",
+    title: "LinkedIn",
+    url: "https://www.linkedin.com/in/mvaodhan/",
+    icon: "mdi:linkedin",
+    external: true
   },
 ];
 
 // Home (/)
 export const homePageContent: HomePageContent = {
   seo: {
-    title: "Tim Witzdam",
+    title: "Aodhan Hamilton",
     description:
-      "Full time student from Germany who loves building cool things using code.",
+      "Software developer from New Zealand",
     image: identity.logo,
   },
-  role: "Student & Software Developer",
+  role: "Software Developer & Digital Assistant",
   description:
-    "I'm Tim Witzdam, a full time student from Germany who also loves building cool things using code.",
+    "I'm Aodhan Hamilton, I'm a Software Developer with a non-tradition background and a part-time Digital Assistant for Learn with Jason.",
   socialLinks: socialLinks,
-  links: [
-    {
-      title: "My Projects",
-      url: "/projects",
-    },
-    {
-      title: "About Me",
-      url: "/about",
-    },
-  ],
 };
 
 // About (/about)
 export const aboutPageContent: AboutPageContent = {
   seo: {
-    title: "About | Tim Witzdam",
+    title: "About | Aodhan Hamilton",
     description:
       "Full time student from Germany who loves building cool things using code.",
     image: identity.logo,
@@ -82,10 +73,10 @@ export const aboutPageContent: AboutPageContent = {
   subtitle: "Some information about myself",
   about: {
     description: `
-I'm Tim Witzdam, a full time student from Germany who also loves building cool things using code.
+I'm Aodhan Hamilton, a Software Developer and Part-Time Digital Assistant at Learn with Jason.
 <br/><br/>
-Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque placeat est architecto tempora voluptatem sit suscipit aspernatur? <br/><br/>
-Facere quibusdam reiciendis, distinctio sunt praesentium error accusantium consectetur nemo vero officia itaque.`, // Markdown is supported
+I'm a builder and tinkerer and all around JavaScript / TypeScript enthusiast, who dabbles in a bit of Golang<br/><br/>
+I enjoy creating and contracting. I like problem solving and am alway egar to provide solutions for others.`, // Markdown is supported
     image_l: {
       url: "/demo-1.jpg",
       alt: "Left Picture",
@@ -99,22 +90,13 @@ Facere quibusdam reiciendis, distinctio sunt praesentium error accusantium conse
     description: `I've worked with a variety of technologies and tools to build cool things. Here are some of the projects I've worked on.`, // Markdown is supported
     items: [
       {
-        title: "Software Developer",
+        title: " Digital Assistant",
         company: {
-          name: "Freelance",
+          name: "Learn with Jason",
           image: "/logo.webp",
-          url: "https://github.com/TimWitzdam",
+          url: "https://www.learnwithjason.dev/",
         },
-        date: "2021 - Present",
-      },
-      {
-        title: "Software Developer",
-        company: {
-          name: "Freelance",
-          image: "/logo.webp",
-          url: "https://github.com/TimWitzdam",
-        },
-        date: "2019 - 2021",
+        date: "2022 - Present",
       },
     ],
   },
@@ -127,42 +109,31 @@ Facere quibusdam reiciendis, distinctio sunt praesentium error accusantium conse
 // Projects (/projects)
 export const projectsPageContent: ProjectPageContent = {
   seo: {
-    title: "Projects | Tim Witzdam",
+    title: "Projects | Aodhan Hamilton",
     description: "Check out what I've been working on.",
     image: identity.logo,
   },
   subtitle: "Check out what I've been working on.",
   projects: [
     {
-      title: "Project 1",
-      description: "Project 1 Description",
+      title: "Schedule with Jason",
+      description: "An internal tool to help schedule Learn with Jason episode",
       image: "/demo-2.jpg",
-      year: "2024",
-      url: "https://github.com/TimWitzdam",
+      year: "2022",
+      url: "https://schedulewithjason.netlify.app/",
     },
-    {
-      title: "Project 1",
-      description: "Project 1 Description",
-      image: "/demo-2.jpg",
-      year: "2024",
-      url: "https://github.com/TimWitzdam",
-    },
-    {
-      title: "Project 1",
-      description: "Project 1 Description",
-      image: "/demo-2.jpg",
-      year: "2024",
-      url: "https://github.com/TimWitzdam",
-    },
+    
   ],
 };
 
 // Blog (/blog)
 export const blogPageContent: BlogPageContent = {
   seo: {
-    title: "Blog | Tim Witzdam",
-    description: "Thoughts, stories and ideas.",
+    title: "Blog | Aodhan Hamilton",
+    description: "Tech breakdowns and how to's.",
     image: identity.logo,
   },
-  subtitle: "Thoughts, stories and ideas.",
+  subtitle: "Tech breakdowns and how to's.",
 };
+
+export const devToUsername : string = "mvaodhan"
