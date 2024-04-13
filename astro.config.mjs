@@ -2,7 +2,6 @@ import { defineConfig } from "astro/config";
 import tailwind from "@astrojs/tailwind";
 import icon from "astro-icon";
 import { remarkReadingTime } from "./remark-reading-time.mjs";
-import node from "@astrojs/node";
 
 import netlify from "@astrojs/netlify";
 
@@ -12,6 +11,6 @@ export default defineConfig({
   output: "server",
   adapter: netlify(),
   markdown: {
-    remarkPlugins: [remarkReadingTime]
-  }
+    remarkPlugins: [remarkReadingTime],
+  },
 });

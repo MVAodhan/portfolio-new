@@ -1,6 +1,4 @@
 ---
-import { Image } from "astro:assets";
-import { Icon } from "astro-icon/components";
 import { navBarLinks, identity } from "../config";
 import type { SEOInfo } from "../types/config";
 
@@ -57,7 +55,7 @@ const { seo } = Astro.props;
     <meta name="description" content={seo.description} />
     <meta property="og:title" content={seo.title} />
     <meta property="og:description" content={seo.description} />
-    <meta property="og:image" content={seo.image} />
+    <meta property="og:image" content={"/avatar.png"} />
   </head>
   <body>
     <header>
