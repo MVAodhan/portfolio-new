@@ -1,8 +1,7 @@
 ---
-import { Image } from "astro:assets";
 import Layout from "../layouts/Layout.astro";
 import { aboutPageContent } from "../config";
-import ResumeItem from "../components/ResumeItem.astro";
+
 import { Markdown } from "@astropub/md";
 import SocialLinkBox from "../components/SocialLinkBox.astro";
 ---
@@ -13,17 +12,6 @@ import SocialLinkBox from "../components/SocialLinkBox.astro";
     <p class="opacity-60 mb-10">{aboutPageContent.subtitle}</p>
     <div class="mb-14">
       <Markdown of={aboutPageContent.about.description} />
-    </div>
-  </section>
-  <section class="my-20 mt-32 max-w-2xl mx-auto px-6 sm:flex sm:gap-16">
-    <h2 class="mb-8 sm:mb-0 opacity-60">Work</h2>
-    <div>
-      <div class="mb-6">
-        <Markdown of={aboutPageContent.work.description} />
-      </div>
-      <div class="grid grid-cols-1 group">
-        {aboutPageContent.work.items.map((item) => <ResumeItem {...item} />)}
-      </div>
     </div>
   </section>
   <section class="mt-32 max-w-2xl mx-auto px-6 sm:flex sm:gap-16">

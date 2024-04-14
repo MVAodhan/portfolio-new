@@ -1,8 +1,10 @@
 ---
 import { Image } from "astro:assets";
 import Layout from "../layouts/Layout.astro";
-import { homePageContent, identity } from "../config";
+import { aboutPageContent, homePageContent, identity } from "../config";
+import ResumeItem from "../components/ResumeItem.astro";
 import SocialLink from "../components/SocialLink.astro";
+import { Markdown } from "@astropub/md";
 ---
 
 <Layout seo={homePageContent.seo}>
@@ -31,5 +33,16 @@ import SocialLink from "../components/SocialLink.astro";
     <p class="max-w-md mb-8">
       {homePageContent.description}
     </p>
+  </section>
+  <section class="my-20 mt-32 max-w-2xl mx-auto px-6 sm:flex sm:gap-16">
+    <h2 class="mb-8 sm:mb-0 opacity-60">Work</h2>
+    <div>
+      <div class="mb-6">
+        <Markdown of={aboutPageContent.work.description} />
+      </div>
+      <div class="grid grid-cols-1 group">
+        {aboutPageContent.work.items.map((item) => <ResumeItem {...item} />)}
+      </div>
+    </div>
   </section>
 </Layout>
