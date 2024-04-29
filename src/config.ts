@@ -120,7 +120,7 @@ export const projectsPageContent: ProjectPageContent = {
       description: "An internal tool to help schedule Learn with Jason episode",
       image: "/demo-2.jpg",
       year: "2022",
-      url: "https://schedulewithjason.netlify.app/",
+      url: "https://www.schedulewithjason.page/",
     },
     
   ],
